@@ -16,7 +16,7 @@ import { ADD_LOGO } from "../assets/Images";
     {
       id: 1,
       name: "Home",
-      path: "Home",
+      path: "/home",
       image: homeIcon,
     },
   ];

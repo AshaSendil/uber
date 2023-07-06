@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import AppLauncher from '../../pages/home/applauncher/applauncher';
 import User from '../../assets/Images/user.png';
 import Dots from "../../assets/Images/sidenav/DotsNine.svg";
 import Calendar from "../../assets/Images/sidenav/Calendar.svg";
@@ -25,7 +24,6 @@ export default function Header() {
         e.preventDefault();
         sessionStorage.clear();
         navigate("/sign-in")
-
     }
   
       
@@ -55,14 +53,14 @@ export default function Header() {
             </div>
             </div>
             
-            <div className="right hidden md:flex lg:flex xl:flex h-[48px] ">
+            <div className="right hidden md:flex lg:flex xl:flex h-[48px] justify-between">
                 <div className="date flex items-center leading-[48px] hover:bg-[#FAFAFA]">
-                    <button className="flex justify-center min-w-[64px]" title="Settings">
+                    <button className="flex justify-center bg-white rounded-full h-8 justify-center items-center min-w-[64px]" title="Settings">
                         <img src={Setting} alt="setting" />
                     </button>
                 </div>
                 <div className="date flex items-center leading-[48px] hover:bg-[#FAFAFA]">
-                    <button className="flex justify-center min-w-[64px]" title="Help">
+                    <button className="flex justify-center min-w-[64px] ml-2 bg-white rounded-full h-8 justify-center items-center"  title="Help">
                         <img src={Help} alt="setting"/>
                     </button>
                 </div>
@@ -103,7 +101,7 @@ export default function Header() {
                 <nav tabindex="0" className="absolute right-0 text-left dropdown-bg w-40 border-solid border-2 invisible transition-all opacity-0 group-focus-within:visible group-focus-within:opacity-100 group-focus-within:translate-y-1">
                     <ul className="py-1 PX-5">
                         <li>
-                            <a href="/" className="block px-4 py-2 ">
+                            <a href="/sign-in" className="block px-4 py-2 ">
                                 <i className="ri-user-line ri-lg mr-1.5 align-sub"></i>
                                 My Account
                             </a>

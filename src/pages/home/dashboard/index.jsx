@@ -16,6 +16,7 @@ export default function Dashboard() {
   const navigate = useNavigate()
 
   return (
+  
     <div className="flex flex-col px-6 py-6">
       <div className="flex justify-between">
         <h1 className="text-2xl font-bold mb-4">{STRINGS?.DRIVER_LOCATION}</h1>

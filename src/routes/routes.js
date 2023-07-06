@@ -1,11 +1,12 @@
 import Dashboard from '../pages/home/dashboard';
 import Home from '../pages/home';
 import Map from '../pages/home/dashboard/map';
-
+import Login from '../pages/loginAndRegister/Login';
+import Signup from '../pages/loginAndRegister/Signup'
 
 const protectedRoutes = [
   {
-    path: '/',
+    path: '/home',
     component: <Home />,
     exact: true
   },
@@ -19,13 +20,33 @@ const protectedRoutes = [
     component: <Map />,
     exact: true
   },
-
- 
 ];
 
-
+const publicRoutes = [
+  {
+    path: "/sign-in",
+    component: <Login />,
+    exact: true,
+  },
+  // {
+  //   path: "/forgot-password",
+  //   component: <ForgotPassword />,
+  //   exact: true,
+  // },
+  {
+    path: "/sign-up",
+    component: <Signup/>,
+    exact: true,
+  },
+  // {
+  //   path: "/reset-password",
+  //   component: <ResetPassword />,
+  //   exact: true,
+  // }
+];
 
 
 export {
   protectedRoutes,
+  publicRoutes
 };
