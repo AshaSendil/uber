@@ -87,7 +87,6 @@ const Login = () => {
       {/* <div className="company-name flex items-center ml-4 mt-5">
         <span className="text-primary text-base font-semibold uppercase">Human</span>
       </div> */}
-      <img className="md:absolute lg:absolute xl:absolute top-6 left-6 p-6 md:p-0 lg:p-0 xl:p-0" src={Human} alt="Terolo logo" />
       <div className="absolute md:absolute lg:absolute xl:absolute inset-0 items-center justify-center flex flex-col">
         <div className="w-full md:w-96 lg:w-96 xl:w-96 items-center justify-center flex flex-col px-8 rounded-xl  shadow-none md:shadow-[0px_0px_10px__rgba(94,108,132,0.1)] lg:shadow-[0px_0px_10px__rgba(94,108,132,0.1)] xl:shadow-[0px_0px_10px__rgba(94,108,132,0.1)]  relative" >
           <div className="w-full text-center md:text-center lg:text-center xl:text-left mb-5 mt-0 md:my-6 lg:my-6 xl:my-6">

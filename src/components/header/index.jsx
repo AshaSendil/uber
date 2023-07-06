@@ -23,7 +23,7 @@ export default function Header() {
     const  Signout =  (e) =>{
         e.preventDefault();
         sessionStorage.clear();
-        navigate("/sign-in")
+        navigate("/")
     }
   
       
