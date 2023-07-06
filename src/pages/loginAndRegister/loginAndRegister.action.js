@@ -110,26 +110,4 @@ export const forgotUserPassword = (
   };
 };
 
-export const resetPassword = (data, navigate,tokenParam) => {
-  console.log("data", data);
-  const resetpassword = sessionStorage.getItem("accessToken");
-  console.log("reset======" , resetpassword);
-  return async (dispatch) => {
-    const { error, response } = await axios.post(
-      `http://terolo-backend.thinroot.co:8082/v1/auth/reset-password?${tokenParam}`,
-      data,
-      //  { headers: { Authorization: `bearer ${token}` } }
-    )
-    navigate("/sign-in");
-    if (response) {
-      dispatch({
-        type: RESET_PASSWORD,
-        payload: response.data,
-      });
-     
-    }
-    console.log("res", response);
 
-    return { response };
-  };
-};
